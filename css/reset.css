@@ -14,11 +14,8 @@ html {
 }
 
 body {
-  /* garante o texto base do documento em 16px (1.6rem) */
-  font-size: var(--font-size-base);
-  padding-top: var(--header-height);
-  padding-bottom: var(--footer-height);
-  line-height: 1.6;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 ul, ol {
