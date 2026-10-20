@@ -1,0 +1,224 @@
+
+/* --------------------------------------------------------------------------
+   1. DESKTOP ULTRAWIDE E TELAS GRANDES 
+   -------------------------------------------------------------------------- */
+@media (min-width: 1440px) {
+
+    html {
+        font-size: 68.75%; 
+    }
+
+    .header,
+    .footer {
+        padding: 0 10%;
+    }
+
+    .section-hero__container,
+    .section-catalog__grid,
+    .section-club__grid {
+        max-width: 140rem; 
+    }
+}
+
+/* --------------------------------------------------------------------------
+   2. DESKTOP PADRÃO 
+   -------------------------------------------------------------------------- */
+@media (min-width: 1025px) {
+
+    .section-catalog__grid,
+    .section-club__grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .card,
+    .plan-card {
+        flex: 1 1 30rem;
+        min-width: 28rem; 
+        max-width: 36rem; 
+    }
+
+    .section-hero__container {
+        min-width: 80rem;
+        max-width: 120rem;
+    }
+
+    .card:hover,
+    .plan-card:hover {
+        transform: translateY(-0.8rem);
+        box-shadow: var(--shadow-hover);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   3. TABLETS E TELAS MÉDIAS 
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .section {
+        min-height: auto;
+        padding: 6rem 5%;
+    }
+
+    .section-hero__container {
+        gap: 3rem;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .section-hero__title {
+        font-size: 2.8rem;
+    }
+
+    .card,
+    .plan-card {
+        flex: 1 1 calc(50% - 2rem);
+        min-width: 26rem;
+        max-width: 45rem;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   4. SMARTPHONES MÉDIOS 
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    /* Compensação para o cabeçalho fixo no mobile */
+    .main-content {
+        padding-top: 13rem;
+        padding-bottom: 7rem;
+    }
+
+    /* Menu Superior Fixo */
+    .header {
+        height: auto;
+        flex-direction: column;
+        padding: 1.2rem 3%;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .header__title {
+        font-size: 1.8rem;
+    }
+
+    .nav__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.4rem;
+    }
+
+    .nav__link {
+        font-size: 1.2rem;
+        padding: 0.6rem 1rem;
+    }
+
+    /* Seção Hero */
+    .section-hero__container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2.4rem;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .section-hero__title {
+        font-size: 2.4rem;
+    }
+
+    /* Cartões ocupando 100% da largura útil */
+    .card,
+    .plan-card {
+        flex: 1 1 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    /* Processo de Torra */
+    .section-process__content {
+        padding: 2.4rem 1.6rem;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    /* Botão Flutuante do WhatsApp */
+    .whatsapp-btn {
+        bottom: 6rem;
+        right: 1.5rem;
+        width: 5rem;
+        height: 5rem;
+        min-width: 5rem;
+        max-width: 5rem;
+    }
+
+    .whatsapp-btn i {
+        font-size: 2.8rem;
+    }
+
+    /* Rodapé Fixo */
+    .footer {
+        height: auto;
+        flex-direction: column;
+        padding: 0.8rem 3%;
+        gap: 0.2rem;
+        text-align: center;
+    }
+
+    .footer__contact,
+    .footer__copyright {
+        font-size: 1.1rem;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   5. SMARTPHONES PEQUENOS 
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+    .main-content {
+        padding-top: 14rem;
+    }
+
+    .header__title {
+        font-size: 1.6rem;
+    }
+
+    .nav__link {
+        font-size: 1.1rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .section__title {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-hero__title {
+        font-size: 2rem;
+    }
+
+    .card__title,
+    .plan-card__title {
+        font-size: 1.6rem;
+    }
+
+    .faq-item__summary {
+        font-size: 1.4rem;
+    }
+
+    .faq-item__text {
+        font-size: 1.3rem;
+    }
+
+    .whatsapp-btn {
+        width: 4.6rem;
+        height: 4.6rem;
+        min-width: 4.6rem;
+        max-width: 4.6rem;
+        bottom: 6.5rem;
+        right: 1rem;
+    }
+
+    .whatsapp-btn i {
+        font-size: 2.6rem;
+    }
+}
