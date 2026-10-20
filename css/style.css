@@ -184,7 +184,7 @@ img {
     padding: 3.2rem;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-card);
-    border: 0.1rem solid var(--color-border);
+    border: 2px dotted #b45309;
 }
 
 .section-process__text {
