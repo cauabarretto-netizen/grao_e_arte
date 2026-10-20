@@ -1,10 +1,10 @@
 @import url(reset.css);
 @import url(variables.css);
 
-/* Escala de Fontes Base para REM (RNF06) */
+/* Escala de Fontes Base para REM*/
 html {
-    font-size: 62.5%; /* 1rem = 10px */
-    scroll-behavior: smooth; /* RF02 */
+    font-size: 62.5%; 
+    scroll-behavior: smooth; 
 }
 
 body {
@@ -21,10 +21,10 @@ img {
     display: block;
 }
 
-/* Margens de compensação para Header (topo) e Footer (fundo) fixos (RF02, RF05) */
+/* Margens de compensação para Header (topo) e Footer (fundo) fixos*/
 .main-content {
-    padding-top: 8rem;    /* Espaço para o cabeçalho fixo */
-    padding-bottom: 6rem; /* Espaço para o rodapé fixo */
+    padding-top: 8rem;    
+    padding-bottom: 6rem; 
 }
 
 /* Menu Superior Fixo (RF01, RNF05) */
@@ -64,13 +64,13 @@ img {
     transition: var(--transition);
 }
 
-/* Efeito Background Hover (RF07) */
+/* Efeito Background Hover*/
 .nav__link:hover {
     color: #ffffff;
     background-color: var(--color-primary);
 }
 
-/* Estrutura Base de Seções (RNF07) */
+/* Estrutura Base de Seções*/
 .section {
     min-height: calc(100vh - 12rem);
     display: flex;
@@ -78,7 +78,7 @@ img {
     align-items: center;
     justify-content: center;
     padding: 4rem 5%;
-    scroll-margin-top: 8rem; /* Compensação do Header na rolagem (RF02) */
+    scroll-margin-top: 8rem;
 }
 
 .section__title {
@@ -125,7 +125,7 @@ img {
     box-shadow: var(--shadow-card);
 }
 
-/* Grelhas Flexbox (RF03, RNF07) */
+/* Grelhas Flexbox*/
 .section-catalog__grid,
 .section-club__grid {
     display: flex;
@@ -136,7 +136,7 @@ img {
     max-width: 120rem;
 }
 
-/* Cards do Catálogo (RF07, RNF05) */
+/* Cards do Catálogo*/
 .card {
     flex: 1 1 30rem;
     max-width: 36rem;
@@ -222,7 +222,7 @@ img {
     color: var(--color-text-body);
 }
 
-/* Seção 05: FAQ Interativo (RF04) */
+/* Seção 05: FAQ Interativo*/
 .section-faq__wrapper {
     width: 100%;
     max-width: 80rem;
@@ -250,7 +250,7 @@ img {
     color: var(--color-text-body);
 }
 
-/* Botão Flutuante do WhatsApp (RF06) */
+/* Botão Flutuante do WhatsApp*/
 .whatsapp-btn {
     position: fixed;
     bottom: 5.5rem;
@@ -278,7 +278,7 @@ img {
     transform: scale(1.1);
 }
 
-/* Rodapé Fixo (RF05) */
+/* Rodapé Fixo*/
 .footer {
     position: fixed;
     bottom: 0;
